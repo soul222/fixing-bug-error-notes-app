@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta name="author" content="Soultan Amirul Mukminin" />
+    <meta
+      name="description"
+      content="Notes App - A simple and efficient note-taking application with archive and search features."
+    />
+    <meta
+      name="keywords"
+      content="notes, note-taking app, archive notes, task management, productivity"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Product+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./public/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="src/app.css" />
+    
+    <title>Notes App</title>
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+    <main>
+      <section class="form-section">
+        <note-form data-form-type="Add Note"></note-form>
+      </section>
+      <section class="list-section">
+        <h2>Notes</h2>
+        <note-list></note-list>
+      </section>
+      <section class="archive-section">
+        <h2>Archived Notes</h2>
+        <note-archive-list></note-archive-list>
+      </section>
+    </main>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="src/main.js" type="module"></script>
+  </body>
+</html>
