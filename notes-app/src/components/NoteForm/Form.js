@@ -36,9 +36,9 @@
           const isValid = inputs.every(({ input, error }) =>
             FormValidation.validateInput(input, error)
           );
-     // Ini Komentar Review Senior: Dengan menggunakan cara ini indikator loading tidak akan muncul ketika proses menambahkan catatan, alih-alih membuat kembali element loading-indicator, kamu dapat memanfaatkan element yang telah ada pada struktur html milikmu dengan memanfaatkan method querySelector.
           if (isValid) {
-            const loadingIndicator = document.createElement('loading-indicator');
+            const loadingIndicator = document.createElement('loading-indicator'); // Ini Komentar Review Senior: Dengan menggunakan cara ini indikator loading tidak akan muncul ketika proses menambahkan catatan, alih-alih membuat kembali element loading-indicator, kamu dapat memanfaatkan element yang telah ada pada struktur html milikmu dengan memanfaatkan method querySelector.
+        
             try {
               loadingIndicator.show();
               const note = {
